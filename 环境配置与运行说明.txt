@@ -1,0 +1,12 @@
+1.请在python3.9环境中使用项目的requirements.txt进行环境配置：
+pip install -r requirements.txt
+
+2.由于本项目涉及深度学习相关内容，要体验完整页面功能请安装2.5版本的gpu-pytorch（可以直接去官网安装）：
+
+# 示例CUDA=12.1，请根据自己设备的CUDA版本安装。
+pip install torch==2.5.0 torchvision==0.20.0 torchaudio==2.5.0 --index-url https://download.pytorch.org/whl/cu121
+
+3.通过如下命令行运行脚本：
+streamlit run 🏠主页
+
+注意：🔍异常检测分析.py文件内包含了模型MyModel的实现代码，以及页面streamlit框架实现。可以将MyModel的代码部分更换成你希望展示的深度学习模型，然后对后续的streamlit框架部分进行对应修改。
